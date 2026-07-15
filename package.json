@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://testuser.github.io/test-toybox",
+  "homepage": "https://cheyeon-sohn.github.io/toybox-template",
   "repository": {
     "type": "git",
-    "url": "https://github.com/testuser/test-toybox.git"
+    "url": "https://github.com/cheyeon-sohn/toybox-template.git"
   },
   "scripts": {
     "dev": "vite",
@@ -16,7 +16,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "test-production": "vite preview --base=/test-toybox/",
+    "test-production": "vite preview --base=/toybox-template/",
     "update-config": "node scripts/update-config.js",
     "validate-config": "node -e \"import('./scripts/config-loader.js').then(m => m.validateConfig())\"",
     "prebuild": "npm run validate-config",

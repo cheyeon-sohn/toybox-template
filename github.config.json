@@ -1,10 +1,10 @@
 {
-  "username": "YOUR_GITHUB_USERNAME",
-  "repository": "YOUR_REPO_NAME",
-  "description": "Configuration for GitHub deployment. Update these values when using this template.",
+  "username": "cheyeon-sohn",
+  "repository": "toybox-template",
+  "description": "Configuration for GitHub deployment.",
   "customization": {
-    "siteName": "TOYBOX",
-    "siteDescription": "A collection of Claude-generated artifacts",
+    "siteName": "cheyeon-sohn's Toybox",
+    "siteDescription": "My collection of Claude artifacts",
     "showGitHubLink": true,
     "defaultTheme": "auto"
   }

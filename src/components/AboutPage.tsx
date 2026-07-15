@@ -23,7 +23,7 @@ export function AboutPage() {
           </p>
         </div>
         <a 
-          href="https://github.com/isnbh0/template-example" 
+          href="https://github.com/cheyeon-sohn/toybox-template" 
           target="_blank" 
           rel="noopener noreferrer"
           className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded mt-3 md:mt-0 flex items-center"
