@@ -1,0 +1,44 @@
+.specstory
+.dev.vars
+.local
+.claude/settings.local.json
+.cursorindexingignore
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# TypeScript compiled files
+*.js
+*.js.map
+*.d.ts
+
+# BUT keep these essential hand-written files:
+!postcss.config.js
+!tailwind.config.mjs
+!src/vite-env.d.ts
+!scripts/update-config.js
+!scripts/validate-setup.js
+!scripts/config-loader.js
+
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

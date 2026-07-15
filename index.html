@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/toybox-template/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOYBOX - cheyeon-sohn</title>
+    <script>
+      // Check if we have a redirect stored from 404.html
+      (function () {
+        const redirect = sessionStorage.getItem("redirect");
+        if (redirect && redirect !== "/") {
+          // Clear the redirect
+          sessionStorage.removeItem("redirect");
+
+          // Determine base URL for GitHub Pages
+          const isProduction = window.location.hostname.includes("github.io");
+          const baseUrl = isProduction ? "/toybox-template/" : "/";
+
+          // Push the path to history for React Router to handle
+          const cleanRedirect = redirect.startsWith(baseUrl)
+            ? redirect
+            : baseUrl + redirect.replace(/^\//, "");
+
+          console.log("Redirecting to:", cleanRedirect);
+          window.history.pushState(null, null, cleanRedirect);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/toybox-template/assets/index-Cu9iNgub.js"></script>
+    <link rel="modulepreload" crossorigin href="/toybox-template/assets/react-vendor-B4qHMsHt.js">
+    <link rel="modulepreload" crossorigin href="/toybox-template/assets/ui-vendor-BAqpK6Hn.js">
+    <link rel="modulepreload" crossorigin href="/toybox-template/assets/mermaid-vendor-BTgv0kGJ.js">
+    <link rel="stylesheet" crossorigin href="/toybox-template/assets/index-3zyxQT2D.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
